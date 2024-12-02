@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./style.css">
   <title>calcu</title>
-
 </head>
+
 <body>
   <h1>Calculo de Cuota</h1>
   
@@ -17,12 +17,14 @@
     <label for="compra">Valor de compra de la divisa:</label>
     <input type="number" id="compra" name="compra" required>
     
-    <button onclick="calcularCuota()">Calcular</button>
+    <div>
+      <button type="button" onclick="calcularCuota()">Calcular</button>
+      <button type="button" onclick="refrescar()">Refresh</button>
+    </div>
   </form>
   
   <div id="result"></div>
   
   <script src="./script.js"></script>
-   
 </body>
 </html>
